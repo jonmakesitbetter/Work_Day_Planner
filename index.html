@@ -29,10 +29,6 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
-      <!-- Add a row with 3 columns, the middle of which is col-md-10. 
-      Then add a styled number block for time, a text block, and a save button. 
-      -->
       <div class="row">
         <div class="col-md-1">
           <p>9:00am</p>
@@ -133,8 +129,29 @@
         </div>
       </div>
     </div>
-
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+$(document).ready(){
+
+ var currentDay = document.getElementById("currentDay");
+ currentDay.innerHTML = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+    </script>
   </body>
 </html>
