@@ -183,21 +183,21 @@
         currentDay.innerHTML = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 
         var hourBlockArray = [
-          nine,
-          ten,
-          eleven,
-          twelve,
-          thirteen,
-          fourteen,
-          fifteen,
-          sixteen,
-          seventeen,
+          nineAm,
+          tenAm,
+          elevenAm,
+          twelvePm,
+          onePm,
+          twoPm,
+          threePm,
+          fourPm,
+          fivePm,
         ];
-        // for (var i = 0; i < hourBlockArray.length; i++){
-        // if (moment().hour() >= hourBlockArray[i]){
-        //   console.log("Less than current hour");
-        // }
-        // }
+        for (var i = 0; i < hourBlockArray.length; i++){
+        if (moment().hour() < hourBlockArray[i]){
+          console.log("Less than current hour");
+        }
+        }
 
         $(".btn").on("click", function () {
           var timeEl = $(this).attr("time");
