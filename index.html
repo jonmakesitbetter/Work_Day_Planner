@@ -28,100 +28,100 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <div class="row">
+      <div class="row" id="9">
         <div class="col-md-1">
           <p class="9">9:00am</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="nine-text">First text block</textarea>
+          <textarea class="col-md-10 text-block" id="nine-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="10">
         <div class="col-md-1">
           <p class="10">10:00am</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="ten-text">First text block</textarea>
+          <textarea class="col-md-10 text-block" id="ten-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="11">
         <div class="col-md-1">
           <p class="11">11:00am</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="eleven-text">First text block</textarea>
+          <textarea class="col-md-10 text-block" id="eleven-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="12">
         <div class="col-md-1">
           <p class="12">12:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="twelve-text">First text block</textarea>
+          <textarea class="col-md-10 text-block" id="twelve-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="13">
         <div class="col-md-1">
           <p class="13">1:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="one-text">First text block</textarea>
+          <textarea class="col-md-10 text-block" id="one-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="14">
         <div class="col-md-1">
           <p class="14">2:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="two-text">First text block</textarea>
+          <textarea class="col-md-10 text-block" id="two-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="15">
         <div class="col-md-1">
           <p class="15">3:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="three-text">First text block</textarea>
+          <textarea class="col-md-10 text-block" id="three-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="16">
         <div class="col-md-1">
           <p class="16">4:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="four-text">First text block</textarea>
+          <textarea class="col-md-10 text-block" id="four-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="17">
         <div class="col-md-1">
           <p class="17">5:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="five-text">First text block</textarea>
+          <textarea class="col-md-10 text-block" id="five-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -166,7 +166,10 @@ if (moment().hour() < hourBlockArray[i]){
     console.log("Current hour");
 }
 }
-
+$(".btn").on("click"){
+  var textBlock = $(".text-block").val();
+  
+}
 
 
 
