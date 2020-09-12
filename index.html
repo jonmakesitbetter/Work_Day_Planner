@@ -31,101 +31,101 @@
     <div class="container">
       <div class="row">
         <div class="col-md-1">
-          <p>9:00am</p>
+          <p class="9">9:00am</p>
         </div>
         <div class="col-md-10">
           <textarea class="col-md-10" id="">First text block</textarea>
         </div>
         <div class="col-md-1">
-          <button class="save btn btn-primary">Save</button>
+          <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-1">
-          <p>10:00am</p>
+          <p class="10">10:00am</p>
         </div>
         <div class="col-md-10">
           <textarea class="col-md-10" id="">First text block</textarea>
         </div>
         <div class="col-md-1">
-          <button class="save btn btn-primary">Save</button>
+          <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-1">
-          <p>11:00am</p>
+          <p class="11">11:00am</p>
         </div>
         <div class="col-md-10">
           <textarea class="col-md-10" id="">First text block</textarea>
         </div>
         <div class="col-md-1">
-          <button class="save btn btn-primary">Save</button>
+          <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-1">
-          <p>12:00pm</p>
+          <p class="12">12:00pm</p>
         </div>
         <div class="col-md-10">
           <textarea class="col-md-10" id="">First text block</textarea>
         </div>
         <div class="col-md-1">
-          <button class="save btn btn-primary">Save</button>
+          <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-1">
-          <p>1:00pm</p>
+          <p class="13">1:00pm</p>
         </div>
         <div class="col-md-10">
           <textarea class="col-md-10" id="">First text block</textarea>
         </div>
         <div class="col-md-1">
-          <button class="save btn btn-primary">Save</button>
+          <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-1">
-          <p>2:00pm</p>
+          <p class="14">2:00pm</p>
         </div>
         <div class="col-md-10">
           <textarea class="col-md-10" id="">First text block</textarea>
         </div>
         <div class="col-md-1">
-          <button class="save btn btn-primary">Save</button>
+          <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-1">
-          <p>3:00pm</p>
+          <p class="15">3:00pm</p>
         </div>
         <div class="col-md-10">
           <textarea class="col-md-10" id="">First text block</textarea>
         </div>
         <div class="col-md-1">
-          <button class="save btn btn-primary">Save</button>
+          <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-1">
-          <p>4:00pm</p>
+          <p class="16">4:00pm</p>
         </div>
         <div class="col-md-10">
           <textarea class="col-md-10" id="">First text block</textarea>
         </div>
         <div class="col-md-1">
-          <button class="save btn btn-primary">Save</button>
+          <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-1">
-          <p>5:00pm</p>
+          <p class="17">5:00pm</p>
         </div>
         <div class="col-md-10">
           <textarea class="col-md-10" id="">First text block</textarea>
         </div>
         <div class="col-md-1">
-          <button class="save btn btn-primary">Save</button>
+          <button class="saveBtn btn btn-primary">Save</button>
         </div>
       </div>
     </div>
@@ -133,11 +133,16 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
-$(document).ready(){
+        
+// $(document).ready(){  <--- Disabled my date and time...
 
  var currentDay = document.getElementById("currentDay");
  currentDay.innerHTML = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 
+console.log()
+
+
+console.log(moment().hour());
 
 
 
@@ -148,10 +153,7 @@ $(document).ready(){
 
 
 
-
-
-
-}
+// }
     </script>
   </body>
 </html>
