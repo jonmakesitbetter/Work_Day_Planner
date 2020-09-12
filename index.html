@@ -197,11 +197,75 @@
      
 
       if (nineAm < timeNow){
-        $("#nine-am").addClass(".past");
+        $("#nine-am").addClass("past");
       } else if (nineAm == moment().hour()){
-        $("#nine-am").addClass(".present");
+        $("#nine-am").addClass("present");
       } else {
-        $("#nine-am").addClass(".future");
+        $("#nine-am").addClass("future");
+      }
+
+      if (tenAm < timeNow){
+        $("#ten-am").addClass("past");
+      } else if (tenAm == moment().hour()){
+        $("#ten-am").addClass("present");
+      } else {
+        $("#ten-am").addClass("future");
+      }
+
+      if (elevenAm < timeNow){
+        $("#eleven-am").addClass("past");
+      } else if (elevenAm == moment().hour()){
+        $("#eleven-am").addClass("present");
+      } else {
+        $("#eleven-am").addClass("future");
+      }
+
+      if (twelvePm < timeNow){
+        $("#twelve-pm").addClass("past");
+      } else if (twelvePm == moment().hour()){
+        $("#twelve-pm").addClass("present");
+      } else {
+        $("#twelve-pm").addClass("future");
+      }
+
+      if (onePm < timeNow){
+        $("#one-pm").addClass("past");
+      } else if (onePm == moment().hour()){
+        $("#one-pm").addClass("present");
+      } else {
+        $("#one-pm").addClass("future");
+      }
+
+      if (twoPm < timeNow){
+        $("#two-pm").addClass("past");
+      } else if (twoPm == moment().hour()){
+        $("#two-pm").addClass("present");
+      } else {
+        $("#two-pm").addClass("future");
+      }
+
+      if (threePm < timeNow){
+        $("#three-pm").addClass("past");
+      } else if (threePm == moment().hour()){
+        $("#three-pm").addClass("present");
+      } else {
+        $("#three-pm").addClass("future");
+      }
+
+      if (fourPm < timeNow){
+        $("#four-pm").addClass("past");
+      } else if (fourPm == moment().hour()){
+        $("#four-pm").addClass("present");
+      } else {
+        $("#four-pm").addClass("future");
+      }
+
+      if (fivePm < timeNow){
+        $("#five-pm").addClass("past");
+      } else if (fivePm == moment().hour()){
+        $("#five-pm").addClass("present");
+      } else {
+        $("#five-pm").addClass("future");
       }
 
         $(".btn").on("click", function () {
