@@ -155,16 +155,13 @@ seventeen = 17;
  var currentDay = document.getElementById("currentDay");
  currentDay.innerHTML = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 
+var hourBlockArray = [nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen];
 
-
-
-
-
-
-if (moment().hour() > nine){
+for (var i = 0; i < hourBlockArray.length; i++){
+if (moment().hour() > hourBlockArray[i]){
     console.log("Yes, it worked");
 }
-
+}
 
 
 
