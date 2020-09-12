@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
-
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -34,7 +33,7 @@
           <p class="9">9:00am</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="">First text block</textarea>
+          <textarea class="col-md-10" id="nine-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -45,7 +44,7 @@
           <p class="10">10:00am</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="">First text block</textarea>
+          <textarea class="col-md-10" id="ten-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -56,7 +55,7 @@
           <p class="11">11:00am</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="">First text block</textarea>
+          <textarea class="col-md-10" id="eleven-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -67,7 +66,7 @@
           <p class="12">12:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="">First text block</textarea>
+          <textarea class="col-md-10" id="twelve-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -78,7 +77,7 @@
           <p class="13">1:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="">First text block</textarea>
+          <textarea class="col-md-10" id="one-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -89,7 +88,7 @@
           <p class="14">2:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="">First text block</textarea>
+          <textarea class="col-md-10" id="two-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -100,7 +99,7 @@
           <p class="15">3:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="">First text block</textarea>
+          <textarea class="col-md-10" id="three-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -111,7 +110,7 @@
           <p class="16">4:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="">First text block</textarea>
+          <textarea class="col-md-10" id="four-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -122,7 +121,7 @@
           <p class="17">5:00pm</p>
         </div>
         <div class="col-md-10">
-          <textarea class="col-md-10" id="">First text block</textarea>
+          <textarea class="col-md-10" id="five-text">First text block</textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn btn btn-primary">Save</button>
@@ -135,16 +134,36 @@
     <script>
         
 // $(document).ready(){  <--- Disabled my date and time...
-
+var nine = $("#9");
+nine = 9;
+var ten = $("#10");
+ten = 10;
+var eleven = $("#11");
+eleven = 11;
+var twelve = $("#12");
+twelve = 12;
+var thirteen = $("#13");
+thirteen = 13;
+var fourteen = $("#14");
+fourteen = 14;
+var fifteen = $("#15");
+fifteen = 15;
+var sixteen = $("#16");
+sixteen = 16;
+var seventeen = $("#17");
+seventeen = 17;
  var currentDay = document.getElementById("currentDay");
  currentDay.innerHTML = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 
-console.log()
 
 
-console.log(moment().hour());
 
 
+
+
+if (moment().hour() > nine){
+    console.log("Yes, it worked");
+}
 
 
 
