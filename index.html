@@ -28,8 +28,8 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <div class="row" id="17">
-        <div class="col-md-1 17">9:00am</div>
+      <div class="row" id="parent-9">
+        <div class="col-md-1">9:00am</div>
         <textarea
           class="col-md-10 text-block description"
           id="nine-am"
@@ -42,8 +42,8 @@
           Save
         </button>
       </div>
-      <div class="row" id="17">
-        <div class="col-md-1 17">10:00am</div>
+      <div class="row" id="parent-10">
+        <div class="col-md-1">10:00am</div>
         <textarea
           class="col-md-10 text-block description"
           id="ten-am"
@@ -56,8 +56,8 @@
           Save
         </button>
       </div>
-      <div class="row" id="17">
-        <div class="col-md-1 17">11:00am</div>
+      <div class="row" id="parent=11">
+        <div class="col-md-1">11:00am</div>
         <textarea
           class="col-md-10 text-block description"
           id="eleven-am"
@@ -70,8 +70,8 @@
           Save
         </button>
       </div>
-      <div class="row" id="17">
-        <div class="col-md-1 17">12:00pm</div>
+      <div class="row" id="parent-12">
+        <div class="col-md-1">12:00pm</div>
         <textarea
           class="col-md-10 text-block description"
           id="twelve-pm"
@@ -84,8 +84,8 @@
           Save
         </button>
       </div>
-      <div class="row" id="17">
-        <div class="col-md-1 17">1:00pm</div>
+      <div class="row" id="parent-1">
+        <div class="col-md-1">1:00pm</div>
         <textarea
           class="col-md-10 text-block description"
           id="one-pm"
@@ -98,8 +98,8 @@
           Save
         </button>
       </div>
-      <div class="row" id="17">
-        <div class="col-md-1 17">2:00pm</div>
+      <div class="row" id="parent-2">
+        <div class="col-md-1">2:00pm</div>
         <textarea
           class="col-md-10 text-block description"
           id="two-pm"
@@ -112,8 +112,8 @@
           Save
         </button>
       </div>
-      <div class="row" id="17">
-        <div class="col-md-1 17">3:00pm</div>
+      <div class="row" id="parent-3">
+        <div class="col-md-1">3:00pm</div>
         <textarea
           class="col-md-10 text-block description"
           id="three-pm"
@@ -126,8 +126,8 @@
           Save
         </button>
       </div>
-      <div class="row" id="17">
-        <div class="col-md-1 17">4:00pm</div>
+      <div class="row" id="parent-4">
+        <div class="col-md-1">4:00pm</div>
         <textarea
           class="col-md-10 text-block description"
           id="four-pm"
@@ -141,8 +141,8 @@
         </button>
       </div>
 
-      <div class="row" id="17">
-        <div class="col-md-1 17">5:00pm</div>
+      <div class="row" id="parent-5">
+        <div class="col-md-1">5:00pm</div>
         <textarea
           class="col-md-10 text-block description"
           id="five-pm"
@@ -181,23 +181,28 @@
         fivePM = 17;
         var currentDay = document.getElementById("currentDay");
         currentDay.innerHTML = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+        var timeNow = moment().hour();
+        // var hourBlockArray = [
+        //   nineAm,
+        //   tenAm,
+        //   elevenAm,
+        //   twelvePm,
+        //   onePm,
+        //   twoPm,
+        //   threePm,
+        //   fourPm,
+        //   fivePm,
+        // ];
 
-        var hourBlockArray = [
-          nineAm,
-          tenAm,
-          elevenAm,
-          twelvePm,
-          onePm,
-          twoPm,
-          threePm,
-          fourPm,
-          fivePm,
-        ];
-        for (var i = 0; i < hourBlockArray.length; i++){
-        if (moment().hour() < hourBlockArray[i]){
-          console.log("Less than current hour");
-        }
-        }
+     
+
+      if (nineAm < timeNow){
+        $("#nine-am").addClass(".past");
+      } else if (nineAm == moment().hour()){
+        $("#nine-am").addClass(".present");
+      } else {
+        $("#nine-am").addClass(".future");
+      }
 
         $(".btn").on("click", function () {
           var timeEl = $(this).attr("time");
