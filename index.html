@@ -158,8 +158,12 @@ seventeen = 17;
 var hourBlockArray = [nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen];
 
 for (var i = 0; i < hourBlockArray.length; i++){
-if (moment().hour() > hourBlockArray[i]){
-    console.log("Yes, it worked");
+if (moment().hour() < hourBlockArray[i]){
+    console.log("Less than current hour");
+} else if (moment().hour() > hourBlockArray[i]){
+    console.log("More than current hour");
+} else {
+    console.log("Current hour");
 }
 }
 
