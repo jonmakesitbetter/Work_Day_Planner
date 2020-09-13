@@ -1,20 +1,19 @@
 # Work_Day_Planner
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+This application is a simple day planner in which notes can be made and will 
+persist even when the page is refreshed. Time blocks area color-coded by past,
+present, and future, and the current date and time are displayed at the top
+of the page.
 
-The following animation demonstrates the application functionality:
+## Credits
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+Special thanks to Brandon Walker, Jude Clarke, Shahmir Farooqui, Jada Arnett, and Nathan Calle for their help and support
+during study sessions. They helped me to understand the code and thus, this program was possible. 
+
+Credit is also due the following websites:
+https://www.w3schools.com/
+https://api.jquery.com/
+
+## License
+
+© Jonathan Peach, 2020

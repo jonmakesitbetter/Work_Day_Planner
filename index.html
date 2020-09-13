@@ -194,124 +194,120 @@
         //   fivePm,
         // ];
 
-    
+        if (nineAm > timeNow) {
+          $("#nine-am").addClass("future");
+        } else if (nineAm == moment().hour()) {
+          $("#nine-am").addClass("present");
+        } else if (nineAm < timeNow) {
+          $("#nine-am").addClass("past");
+        }
 
-      if (nineAm > timeNow){
-        $("#nine-am").addClass("future");
-      } else if (nineAm == moment().hour()){
-        $("#nine-am").addClass("present");
-      } else if (nineAm < timeNow) {
-        $("#nine-am").addClass("past");
-      }
+        if (localStorage.getItem("9am") !== null) {
+          $("#nine-am").text(localStorage.getItem("9am"));
+        }
 
-      if (localStorage.getItem("11am") !== null){
-        $("#eleven-am").text(localStorage.getItem("11am"));
-}
+        if (tenAm < timeNow) {
+          $("#ten-am").addClass("past");
+        } else if (tenAm == moment().hour()) {
+          $("#ten-am").addClass("present");
+        } else {
+          $("#ten-am").addClass("future");
+        }
 
-      if (tenAm < timeNow){
-        $("#ten-am").addClass("past");
-      } else if (tenAm == moment().hour()){
-        $("#ten-am").addClass("present");
-      } else {
-        $("#ten-am").addClass("future");
-      }
+        if (localStorage.getItem("10am") !== null) {
+          $("#ten-am").text(localStorage.getItem("10am"));
+        }
 
-      if (localStorage.getItem("11am") !== null){
-        $("#eleven-am").text(localStorage.getItem("11am"));
-}
+        if (elevenAm < timeNow) {
+          $("#eleven-am").addClass("past");
+        } else if (elevenAm == moment().hour()) {
+          $("#eleven-am").addClass("present");
+        } else {
+          $("#eleven-am").addClass("future");
+        }
 
-      if (elevenAm < timeNow){
-        $("#eleven-am").addClass("past");
-      } else if (elevenAm == moment().hour()){
-        $("#eleven-am").addClass("present");
-      } else {
-        $("#eleven-am").addClass("future");
-      }
+        if (localStorage.getItem("11am") !== null) {
+          $("#eleven-am").text(localStorage.getItem("11am"));
+        }
 
-      if (localStorage.getItem("11am") !== null){
-        $("#eleven-am").text(localStorage.getItem("11am"));
-}
+        if (twelvePm < timeNow) {
+          $("#twelve-pm").addClass("past");
+        } else if (twelvePm == moment().hour()) {
+          $("#twelve-pm").addClass("present");
+        } else {
+          $("#twelve-pm").addClass("future");
+        }
 
+        if (localStorage.getItem("12pm") !== null) {
+          $("#twelve-pm").text(localStorage.getItem("12pm"));
+        }
 
-      if (twelvePm < timeNow){
-        $("#twelve-pm").addClass("past");
-      } else if (twelvePm == moment().hour()){
-        $("#twelve-pm").addClass("present");
-      } else {
-        $("#twelve-pm").addClass("future");
-      }
+        if (onePm < timeNow) {
+          $("#one-pm").addClass("past");
+        } else if (onePm == moment().hour()) {
+          $("#one-pm").addClass("present");
+        } else {
+          $("#one-pm").addClass("future");
+        }
 
-      if (localStorage.getItem("11am") !== null){
-        $("#eleven-am").text(localStorage.getItem("11am"));
-}
+        if (localStorage.getItem("1pm") !== null) {
+          $("#one-pm").text(localStorage.getItem("1pm"));
+        }
 
-      if (onePm < timeNow){
-        $("#one-pm").addClass("past");
-      } else if (onePm == moment().hour()){
-        $("#one-pm").addClass("present");
-      } else {
-        $("#one-pm").addClass("future");
-      }
+        if (twoPm < timeNow) {
+          $("#two-pm").addClass("past");
+        } else if (twoPm == moment().hour()) {
+          $("#two-pm").addClass("present");
+        } else {
+          $("#two-pm").addClass("future");
+        }
 
-      if (localStorage.getItem("11am") !== null){
-        $("#eleven-am").text(localStorage.getItem("11am"));
-}
+        if (localStorage.getItem("2pm") !== null) {
+          $("#two-pm").text(localStorage.getItem("2pm"));
+        }
 
-      if (twoPm < timeNow){
-        $("#two-pm").addClass("past");
-      } else if (twoPm == moment().hour()){
-        $("#two-pm").addClass("present");
-      } else {
-        $("#two-pm").addClass("future");
-      }
+        if (threePm < timeNow) {
+          $("#three-pm").addClass("past");
+        } else if (threePm == moment().hour()) {
+          $("#three-pm").addClass("present");
+        } else {
+          $("#three-pm").addClass("future");
+        }
 
-      if (localStorage.getItem("11am") !== null){
-        $("#eleven-am").text(localStorage.getItem("11am"));
-}
+        if (localStorage.getItem("3pm") !== null) {
+          $("#three-pm").text(localStorage.getItem("3pm"));
+        }
 
-      if (threePm < timeNow){
-        $("#three-pm").addClass("past");
-      } else if (threePm == moment().hour()){
-        $("#three-pm").addClass("present");
-      } else {
-        $("#three-pm").addClass("future");
-      }
+        if (fourPm < timeNow) {
+          $("#four-pm").addClass("past");
+        } else if (fourPm == moment().hour()) {
+          $("#four-pm").addClass("present");
+        } else {
+          $("#four-pm").addClass("future");
+        }
 
-      if (localStorage.getItem("3pm") !== null){
-        $("#three-pm").text(localStorage.getItem("3pm"));
-}
+        if (localStorage.getItem("4pm") !== null) {
+          $("#four-pm").text(localStorage.getItem("4pm"));
+        }
 
-      if (fourPm < timeNow){
-        $("#four-pm").addClass("past");
-      } else if (fourPm == moment().hour()){
-        $("#four-pm").addClass("present");
-      } else {
-        $("#four-pm").addClass("future");
-      }
+        if (fivePm < timeNow) {
+          $("#five-pm").addClass("past");
+        } else if (fivePm == moment().hour()) {
+          $("#five-pm").addClass("present");
+        } else {
+          $("#five-pm").addClass("future");
+        }
 
-      if (localStorage.getItem("4pm") !== null){
-        $("#four-pm").text(localStorage.getItem("4pm"));
-}
-
-      if (fivePm < timeNow){
-        $("#five-pm").addClass("past");
-      } else if (fivePm == moment().hour()){
-        $("#five-pm").addClass("present");
-      } else {
-        $("#five-pm").addClass("future");
-      }
-
-      if (localStorage.getItem("5pm") !== null){
-        $("#five-pm").text(localStorage.getItem("5pm"));
-}
+        if (localStorage.getItem("5pm") !== null) {
+          $("#five-pm").text(localStorage.getItem("5pm"));
+        }
 
         $(".btn").on("click", function () {
           var timeEl = $(this).attr("time");
           var input = $(this).siblings("textarea.description").val();
           console.log("Click");
           localStorage.setItem(timeEl, input);
-
-});
+        });
       });
       // var nineStored = localStorage.getItem("9");
       // $("9 .description").text(9);
