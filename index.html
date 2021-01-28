@@ -27,6 +27,7 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <!-- Time blocks for plans typed. Need to write a for loop to shorten this code. -->
     <div class="container">
       <div class="row" id="parent-9">
         <div class="col-md-1">9:00am</div>
@@ -156,11 +157,13 @@
         </button>
       </div>
     </div>
+    <!-- Abstract out the javascript into another file. -->
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
       $(document).ready(function () {
+        // Variables for individual time blocks. Need to write a for loop to shorten this code.
         var nineAm = $("#nine-am");
         nineAm = 9;
         var tenAm = $("#ten-am");
@@ -179,21 +182,11 @@
         fourPm = 16;
         var fivePm = $("#five-pm");
         fivePM = 17;
+        // moment.js setup for block color assignment.
         var currentDay = document.getElementById("currentDay");
         currentDay.innerHTML = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
         var timeNow = moment().hour();
-        // var hourBlockArray = [
-        //   nineAm,
-        //   tenAm,
-        //   elevenAm,
-        //   twelvePm,
-        //   onePm,
-        //   twoPm,
-        //   threePm,
-        //   fourPm,
-        //   fivePm,
-        // ];
-
+        // If/else statement blocks for each time. Rewrite with a for loop to shorten this code. Also look into more robust offline storage to replace local storage.
         if (nineAm > timeNow) {
           $("#nine-am").addClass("future");
         } else if (nineAm == moment().hour()) {
@@ -309,12 +302,7 @@
           localStorage.setItem(timeEl, input);
         });
       });
-      // var nineStored = localStorage.getItem("9");
-      // $("9 .description").text(9);
 
-      // var 9textBlocksEl = $(this).siblings(".description").val();
-      //   var currentTimeEl = $(this).parent().attr("id");
-      //   localStorage.setItem(currentTimeEl, textBlocksEl);
     </script>
   </body>
 </html>
